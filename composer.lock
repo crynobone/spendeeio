@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4f273da8890343cb666b7d8483969be3",
+    "hash": "5670395a84e85f7bee0229ddfe08f0f9",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1823,16 +1823,16 @@
         },
         {
             "name": "orchestra/tenanti",
-            "version": "dev-master",
+            "version": "v3.1.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/tenanti.git",
-                "reference": "8207d0e105df1218e20f4b03cb6b9509adec5739"
+                "reference": "0ba38f8e79dc15edb15bb8192c02bfaec29f8ab4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/tenanti/zipball/8207d0e105df1218e20f4b03cb6b9509adec5739",
-                "reference": "8207d0e105df1218e20f4b03cb6b9509adec5739",
+                "url": "https://api.github.com/repos/orchestral/tenanti/zipball/0ba38f8e79dc15edb15bb8192c02bfaec29f8ab4",
+                "reference": "0ba38f8e79dc15edb15bb8192c02bfaec29f8ab4",
                 "shasum": ""
             },
             "require": {
@@ -1876,20 +1876,20 @@
                 "orchestral",
                 "schema"
             ],
-            "time": "2015-04-15 05:48:49"
+            "time": "2015-05-10 16:50:20"
         },
         {
             "name": "orchestra/translation",
-            "version": "v3.1.0-BETA1",
+            "version": "v3.1.0-BETA2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/translation.git",
-                "reference": "0759ad3ffd86f989850ce0b2625b00f2834ce5a3"
+                "reference": "ec9e5c53eea1a97caf4faf968c9beee318bf4e74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/translation/zipball/0759ad3ffd86f989850ce0b2625b00f2834ce5a3",
-                "reference": "0759ad3ffd86f989850ce0b2625b00f2834ce5a3",
+                "url": "https://api.github.com/repos/orchestral/translation/zipball/ec9e5c53eea1a97caf4faf968c9beee318bf4e74",
+                "reference": "ec9e5c53eea1a97caf4faf968c9beee318bf4e74",
                 "shasum": ""
             },
             "require": {
@@ -1933,7 +1933,7 @@
                 "orchestral",
                 "translation"
             ],
-            "time": "2015-04-19 11:43:41"
+            "time": "2015-05-10 12:12:22"
         },
         {
             "name": "orchestra/view",
