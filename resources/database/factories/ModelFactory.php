@@ -11,11 +11,14 @@
 |
 */
 
-$factory['App\User'] = function ($faker) {
+use App\User;
+
+$factory[User::class] = function ($faker) {
     return [
         'email'          => $faker->email,
         'password'       => str_random(10),
         'remember_token' => str_random(10),
-        'status'         => App\User::VERIFIED,
+        'subscription'   => User::SUBSCRIPTION_FOREVER,
+        'status'         => User::VERIFIED,
     ];
 };
