@@ -6,3 +6,8 @@ dependencies:
   override:
     - composer install --prefer-source --no-interaction
     - php artisan clear-compiled
+
+test:
+  override:
+    - ./vendor/bin/phpunit
+    - ./vendor/bin/phpspec run
