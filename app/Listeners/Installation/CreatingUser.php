@@ -3,7 +3,7 @@
 use App\User;
 use Orchestra\Model\Eloquent;
 
-class OnCreateUser
+class CreatingUser
 {
     /**
      * Handle the event.

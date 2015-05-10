@@ -1,7 +1,7 @@
 <?php
 
-use App\Listeners\Installation\OnCreateUser;
-use App\Listeners\Installation\OnCreateUserSchema;
+use App\Listeners\Installation\CreatingUser;
+use App\Listeners\Installation\CreatingUserSchema;
 
-Event::listen('orchestra.install.schema: users', OnCreateUserSchema::class);
-Event::listen('orchestra.install: user', OnCreateUser::class);
+Event::listen('orchestra.install.schema: users', CreatingUserSchema::class);
+Event::listen('orchestra.install: user', CreatingUser::class);

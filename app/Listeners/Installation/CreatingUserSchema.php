@@ -3,7 +3,7 @@
 use App\User;
 use Illuminate\Database\Schema\Blueprint;
 
-class OnCreateUserSchema
+class CreatingUserSchema
 {
     /**
      * Handle the event.
