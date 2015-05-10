@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3bff8b909172c3dfeaf595ddc390c2b2",
+    "hash": "4f273da8890343cb666b7d8483969be3",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -3364,6 +3364,53 @@
                 "orchestral"
             ],
             "time": "2015-04-19 14:07:42"
+        },
+        {
+            "name": "orchestra/studio",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/studio.git",
+                "reference": "f184c7881c366ebf8601c95474726632c64ca0aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/studio/zipball/f184c7881c366ebf8601c95474726632c64ca0aa",
+                "reference": "f184c7881c366ebf8601c95474726632c64ca0aa",
+                "shasum": ""
+            },
+            "require": {
+                "orchestra/support": "3.1.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/console": "5.1.*",
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Studio\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Code Generator for Orchestra Platform",
+            "time": "2015-04-16 15:15:12"
         },
         {
             "name": "orchestra/testbench",

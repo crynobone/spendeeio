@@ -9,6 +9,7 @@
 	},
 	"require-dev": {
 		"orchestra/installer": "~3.1",
+		"orchestra/studio": "~3.1",
 		"orchestra/testing": "~3.1",
 		"mockery/mockery": "0.9.*",
 		"phpunit/phpunit": "~4.0",
