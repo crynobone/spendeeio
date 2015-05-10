@@ -28,6 +28,7 @@ class TenantContext
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next
+     *
      * @return mixed
      */
     public function handle($request, Closure $next)
@@ -52,6 +53,7 @@ class TenantContext
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
+     *
      * @return bool
      */
     protected function authorize($request, $user)
