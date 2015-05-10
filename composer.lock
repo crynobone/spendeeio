@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5f12bd0c7a5ed3ff6eafd16f7fe82030",
+    "hash": "974a7fc64200c0510049ad1f7dc8e4bf",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1009,6 +1009,66 @@
             "time": "2015-04-19 11:09:41"
         },
         {
+            "name": "orchestra/avatar",
+            "version": "v3.1.0-BETA1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/avatar.git",
+                "reference": "47c20969f7dfdd25e2a139ca7d1f6336c41ed63a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/avatar/zipball/47c20969f7dfdd25e2a139ca7d1f6336c41ed63a",
+                "reference": "47c20969f7dfdd25e2a139ca7d1f6336c41ed63a",
+                "shasum": ""
+            },
+            "require": {
+                "orchestra/support-facades": "3.1.*",
+                "orchestra/support-providers": "3.1.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/container": "5.1.*",
+                "illuminate/database": "5.1.*",
+                "mockery/mockery": "0.9.*"
+            },
+            "suggest": {
+                "laravel/framework": "Allow using orchestra/avatar component outside of Orchestra Platform",
+                "orchestra/foundation": "Allow using orchestra/avatar with Orchestra Platform"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Avatar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Avatar Component for Orchestra Platform",
+            "keywords": [
+                "avatar",
+                "gravatar",
+                "laravel",
+                "orchestra-platform",
+                "orchestral"
+            ],
+            "time": "2015-04-19 11:28:04"
+        },
+        {
             "name": "orchestra/control",
             "version": "v3.1.0-BETA1",
             "source": {
@@ -1272,59 +1332,6 @@
                 "table"
             ],
             "time": "2015-04-20 23:33:04"
-        },
-        {
-            "name": "orchestra/installer",
-            "version": "v3.1.0-BETA1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/orchestral/installer.git",
-                "reference": "cb6e0af35b45938bbf6d2f18d29f1e6b30e01858"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/installer/zipball/cb6e0af35b45938bbf6d2f18d29f1e6b30e01858",
-                "reference": "cb6e0af35b45938bbf6d2f18d29f1e6b30e01858",
-                "shasum": ""
-            },
-            "require": {
-                "orchestra/foundation": "3.1.*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "0.9.*",
-                "orchestra/testing": "3.1.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Orchestra\\Installation\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mior Muhammad Zaki",
-                    "email": "crynobone@gmail.com",
-                    "homepage": "https://github.com/crynobone"
-                }
-            ],
-            "description": "Orchestra Platform Installer",
-            "homepage": "http://orchestraplatform.com/docs/latest/",
-            "keywords": [
-                "installer",
-                "orchestra-platform",
-                "orchestral"
-            ],
-            "time": "2015-04-19 14:07:42"
         },
         {
             "name": "orchestra/kernel",
@@ -1813,6 +1820,63 @@
                 "validator"
             ],
             "time": "2015-04-15 15:19:47"
+        },
+        {
+            "name": "orchestra/tenanti",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/tenanti.git",
+                "reference": "8207d0e105df1218e20f4b03cb6b9509adec5739"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/tenanti/zipball/8207d0e105df1218e20f4b03cb6b9509adec5739",
+                "reference": "8207d0e105df1218e20f4b03cb6b9509adec5739",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "5.1.*",
+                "orchestra/support-core": "3.1.*",
+                "orchestra/support-providers": "3.1.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "laravel/framework": "5.1.*",
+                "mockery/mockery": "0.9.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Tenanti\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Tenant based Database Schema Manager for Laravel",
+            "keywords": [
+                "laravel",
+                "migration",
+                "multi-tenant",
+                "orchestra-platform",
+                "orchestral",
+                "schema"
+            ],
+            "time": "2015-04-15 05:48:49"
         },
         {
             "name": "orchestra/translation",
@@ -3249,6 +3313,59 @@
             "time": "2015-04-02 19:54:00"
         },
         {
+            "name": "orchestra/installer",
+            "version": "v3.1.0-BETA1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/installer.git",
+                "reference": "cb6e0af35b45938bbf6d2f18d29f1e6b30e01858"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/installer/zipball/cb6e0af35b45938bbf6d2f18d29f1e6b30e01858",
+                "reference": "cb6e0af35b45938bbf6d2f18d29f1e6b30e01858",
+                "shasum": ""
+            },
+            "require": {
+                "orchestra/foundation": "3.1.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/testing": "3.1.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\Installation\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Orchestra Platform Installer",
+            "homepage": "http://orchestraplatform.com/docs/latest/",
+            "keywords": [
+                "installer",
+                "orchestra-platform",
+                "orchestral"
+            ],
+            "time": "2015-04-19 14:07:42"
+        },
+        {
             "name": "orchestra/testbench",
             "version": "dev-master",
             "source": {
@@ -3359,6 +3476,51 @@
             ],
             "description": "Orchestra Platform Testing Helper",
             "time": "2015-05-08 14:11:04"
+        },
+        {
+            "name": "orchestra/theme-installer",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orchestral/theme-installer.git",
+                "reference": "cb6ff37ddae2ede08cfcb7bc4e62111b6cb8b89e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orchestral/theme-installer/zipball/cb6ff37ddae2ede08cfcb7bc4e62111b6cb8b89e",
+                "reference": "cb6ff37ddae2ede08cfcb7bc4e62111b6cb8b89e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.*",
+                "illuminate/support": "~4.2|~5.0",
+                "php": ">=5.4.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "class": "Orchestra\\ThemeInstaller\\InstallerPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orchestra\\ThemeInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "Theme Installer for Orchestra Platform",
+            "time": "2015-04-12 13:51:14"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -4324,6 +4486,46 @@
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
             "time": "2015-02-24 06:35:25"
+        },
+        {
+            "name": "stackie/adminlte-theme",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stackie/adminlte-theme.git",
+                "reference": "65ea2337286c324399061a6ff3ce5ca57d3ab790"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stackie/adminlte-theme/zipball/65ea2337286c324399061a6ff3ce5ca57d3ab790",
+                "reference": "65ea2337286c324399061a6ff3ce5ca57d3ab790",
+                "shasum": ""
+            },
+            "require": {
+                "orchestra/avatar": "~3.0",
+                "orchestra/theme-installer": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "orchestra-theme",
+            "extra": {
+                "theme-name": "adminlte",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mior Muhammad Zaki",
+                    "email": "crynobone@gmail.com",
+                    "homepage": "https://github.com/crynobone"
+                }
+            ],
+            "description": "AdminLTE Theme for Orchestra Platform",
+            "time": "2015-04-15 07:18:50"
         },
         {
             "name": "symfony/yaml",
