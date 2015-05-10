@@ -1,0 +1,8 @@
+machine:
+  php:
+    version: 5.6.5
+
+dependencies:
+  override:
+    - composer install --prefer-source --no-interaction
+    - php artisan clear-compiled
