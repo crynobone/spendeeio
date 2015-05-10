@@ -2,10 +2,11 @@
 
 use App\Traits\EloquentTenantContext;
 use Orchestra\Model\Eloquent;
+use Orchestra\Model\Traits\MetableTrait;
 
 class Transaction extends Eloquent
 {
-    use EloquentTenantContext;
+    use EloquentTenantContext, MetableTrait;
 
     /**
      * Get the table associated with the model.

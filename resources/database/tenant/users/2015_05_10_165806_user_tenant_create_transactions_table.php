@@ -22,7 +22,7 @@ class UserTenantCreateTransactionsTable extends Migration
             $table->date('date');
             $table->text('note');
             $table->decimal('amount', 10, 2);
-            $table->json('meta');
+            $table->json('meta')->nullable();
 
             $table->timestamps();
         });
