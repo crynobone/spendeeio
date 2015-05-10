@@ -1,0 +1,34 @@
+<?php namespace App\Http;
+
+use Orchestra\Foundation\Http\Kernel as HttpKernel;
+
+class Kernel extends HttpKernel
+{
+    /**
+     * The application's global HTTP middleware stack.
+     *
+     * @var array
+     */
+    protected $middleware = [
+        'Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode',
+        'Illuminate\Cookie\Middleware\EncryptCookies',
+        'Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse',
+        'Illuminate\Session\Middleware\StartSession',
+        'Illuminate\View\Middleware\ShareErrorsFromSession',
+        'App\Http\Middleware\VerifyCsrfToken',
+    ];
+
+    /**
+     * The application's route middleware.
+     *
+     * @var array
+     */
+    protected $routeMiddleware = [
+        'auth' => 'App\Http\Middleware\Authenticate',
+        'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
+        'backend' => 'Orchestra\Foundation\Http\Middleware\UseBackendTheme',
+        'can' => 'Orchestra\Foundation\Http\Middleware\Can',
+        'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
+        'manage' => 'Orchestra\Foundation\Http\Middleware\CanManage',
+    ];
+}
