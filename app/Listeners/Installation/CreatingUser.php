@@ -14,6 +14,7 @@ class CreatingUser
      */
     public function handle(Eloquent $user)
     {
+        $user->setAttribute('username', 'administrator');
         $user->setAttribute('subscription', User::SUBSCRIPTION_FOREVER);
     }
 }

@@ -27,6 +27,23 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->registerApplicationDomain();
+    }
+
+    /**
+     * Register application domain URL.
+     *
+     * @return void
+     */
+    protected function registerApplicationDomain()
+    {
+        $domain = str_replace(['http://', 'https://', '//'], '', env('APP_URL'));
+
+        set_meta('app::url', $domain);
+        set_meta('tenant::domain', '{tenant}.'.$domain);
+
+        config([
+            'session.domain' => ".{$domain}",
+        ]);
     }
 }

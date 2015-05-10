@@ -2,6 +2,7 @@
 
 use App\Http\Middleware\Authenticate;
 use App\Http\Middleware\RedirectIfAuthenticated;
+use App\Http\Middleware\TenantContext;
 use App\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Auth\Middleware\AuthenticateWithBasicAuth;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -42,5 +43,6 @@ class Kernel extends HttpKernel
         'can'        => Can::class,
         'guest'      => RedirectIfAuthenticated::class,
         'manage'     => CanManage::class,
+        'tenant'     => TenantContext::class,
     ];
 }

@@ -11,4 +11,10 @@
 |
 */
 
+use Illuminate\Routing\Router;
+
+$router->group(['domain' => get_meta('tenant::domain'), 'middleware' => 'tenant'], function (Router $router) {
+    $router->get('/', 'WelcomeController@index');
+});
+
 $router->get('/', 'WelcomeController@index');

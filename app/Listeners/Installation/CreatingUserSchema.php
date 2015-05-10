@@ -14,6 +14,7 @@ class CreatingUserSchema
      */
     public function handle(Blueprint $table)
     {
+        $table->string('username')->nullable()->index();
         $table->string('subscription')->default(User::SUBSCRIPTION_TRIAL)->nullable();
         $table->timestamp('trial_ends_at')->nullable();
         $table->timestamp('subscription_ends_at')->nullable();
