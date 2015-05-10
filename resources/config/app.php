@@ -159,7 +159,9 @@ return [
         /*
          * Orchestra Platform Optional Service Providers...
          */
-        'Orchestra\Installation\InstallerServiceProvider',
+        'Orchestra\Avatar\AvatarServiceProvider',
+        'Orchestra\Tenanti\TenantiServiceProvider',
+        'Orchestra\Tenanti\CommandServiceProvider',
 
         /*
          * Application Service Providers...
