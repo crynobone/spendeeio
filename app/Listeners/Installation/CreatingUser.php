@@ -9,6 +9,7 @@ class CreatingUser
      * Handle the event.
      *
      * @param  \Orchestra\Model\Eloquent $user
+     *
      * @return void
      */
     public function handle(Eloquent $user)

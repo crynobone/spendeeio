@@ -36,11 +36,11 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => Authenticate::class,
+        'auth'       => Authenticate::class,
         'auth.basic' => AuthenticateWithBasicAuth::class,
-        'backend' => UseBackendTheme::class,
-        'can' => Can::class,
-        'guest' => RedirectIfAuthenticated::class,
-        'manage' => CanManage::class,
+        'backend'    => UseBackendTheme::class,
+        'can'        => Can::class,
+        'guest'      => RedirectIfAuthenticated::class,
+        'manage'     => CanManage::class,
     ];
 }

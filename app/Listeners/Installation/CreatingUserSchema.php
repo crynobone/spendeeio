@@ -9,6 +9,7 @@ class CreatingUserSchema
      * Handle the event.
      *
      * @param \Illuminate\Database\Schema\Blueprint $table
+     *
      * @return void
      */
     public function handle(Blueprint $table)
