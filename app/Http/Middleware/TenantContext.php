@@ -1,5 +1,6 @@
 <?php namespace App\Http\Middleware;
 
+use App\User;
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
 use Symfony\Component\HttpKernel\Exception\HttpException;
@@ -52,14 +53,14 @@ class TenantContext
      * Determine if user is authorize for this tenant.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
+     * @param  \Illuminate\Contracts\Auth\Authenticatable|\App\User  $user
      *
      * @return bool
      */
-    protected function authorize($request, $user)
+    protected function authorize($request, User $user)
     {
         $tenant = $request->route()->parameter('tenant');
 
-        return $tenant === $user->username;
+        return $tenant === $user->getAttribute('username');
     }
 }
