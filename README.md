@@ -1,0 +1,1 @@
+[![CircleCI branch](https://img.shields.io/circleci/project/crynobone/spendeeio/master.svg?style=flat)](https://circleci.com/gh/crynobone/spendeeio)
