@@ -5,7 +5,8 @@
 		"orchestra/foundation": "3.1.*",
 		"orchestra/avatar": "~3.1",
 		"orchestra/control": "~3.1",
-		"orchestra/tenanti": "~3.1"
+		"orchestra/tenanti": "3.1.x-dev",
+		"pda/pheanstalk": "~3.0"
 	},
 	"require-dev": {
 		"orchestra/installer": "~3.1",

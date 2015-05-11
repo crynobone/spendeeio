@@ -1,7 +1,5 @@
 <?php namespace App\Providers;
 
-use App\Listeners\Observers\MultiTenant;
-use App\User;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -13,7 +11,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        User::observe(MultiTenant::class);
+        //
     }
 
     /**

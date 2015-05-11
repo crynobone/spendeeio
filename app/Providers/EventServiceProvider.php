@@ -1,7 +1,10 @@
 <?php namespace App\Providers;
 
+use App\Listeners\Observers\MultiTenant;
+use App\User;
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use Orchestra\Model\User as OrchestraUser;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -25,6 +28,9 @@ class EventServiceProvider extends ServiceProvider
     {
         parent::boot($events);
 
-        //
+        $observer = new MultiTenant();
+
+        User::observe($observer);
+        OrchestraUser::observe($observer);
     }
 }
